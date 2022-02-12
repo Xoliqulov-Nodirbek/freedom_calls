@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- HEADER ------------ */
+
+.header__nav{
+    position: relative;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+    align-items: center;
+}
+
+.header__list{
+    display: flex;
+    list-style-type: none;
+    
+}
+
+.header__link{
+    text-decoration: none;
+    padding: 0px 30px;
+    font-weight: 400;
+    font-size: 15px;
+    color: black;
+}
+
+.header__input{
+    width: 178px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-left: 10px;
+    padding-inline-start: 3px;  
+    padding-bottom: 5px;  
+    transition: box-shadow .5s ease;
+}
+
+.header__input:focus{
+    box-shadow: 2px 2px 5px black;
+    border-radius: 2px;
+}
+
+.header__btn{
+    display: none;
+}
+
+
+/* ---------------- MAIN -------------- */
+
+
+.body__container{
+    display: flex;
+    width: 1040px;
+    padding: 0 20px;
+    justify-content: space-between;
+    background-image: url('./images/intro-bg@2x.jpg');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 7.5cm;
+}
+
+.body__content-start{
+    padding-top: 91px;
+}
+
+.content-start__title{
+    width: 331px;
+    height: 60px;
+    font-family: Roboto; 
+    font-weight: 700; 
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.content-start__subtitle{
+    position: relative;
+    width: 410px;
+    height: 120px;  
+    flex: none;
+    font-family: Roboto;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 40px;
+    color: #777777;
+    
+}
+
+.content-start__subtitle::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 3px;
+    height: 125px;
+    background-color: #777;
+    left: -30px;
+}
+
+
+.content-start__btn{
+    flex: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    order: 0;
+    flex-grow: 0;
+    margin: 30px 0px;
+    padding: 12px 38.5px;
+    border: none;
+    background: #EA625C;
+    color: #fff;
+}
+
+.content-start__btn:hover{
+    background-color: #ee463e;
+}
+
+.content-start__img{
+    width: 400px;
+    height: 567px;
+}
+
+
+/* ------------------------------------------------------ */
+
+
+.body__content-center{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.content-center1, .content-center2, .content-center3{
+    width: 290px;
+}
+
+.content-center1__title{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.content-center1__subtitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    margin: 30px 0px;
+    flex-grow: 1;
+}
+
+.content-center1__box{
+    display: flex;
+    align-items: center;
+}
+
+.content-center__br{
+    width: 30px;
+    height: 2px;
+    background-color:#EA625C;
+    transition: all .5s ease;
+}
+
+.content-center__learn{
+    color:#EA625C;
+    margin-left: 10px;
+}
+
+.content-center1__box:hover > .content-center__br{
+    width: 50px;
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+.body-content__end{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 130px;
+}
+
+.content__end-text{
+    display: flex;
+    display: inline-block;
+    flex-direction: column;
+}
+
+.content__end-title{
+    width: 380px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;  
+    font-size: 50px;
+    color: #000000;
+}
+
+.content__end-subtitle{
+    position: relative;
+    width: 450px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #777777;
+    margin: 30px 0px;
+    margin-left: 40px;
+}
+
+.content__end-subtitle::before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100px;
+    background-color: #888;
+    left: -40px;
+}
+
+.content__end-png{
+    width: 500px;
+    height: 600px;
+}
+
+.content__end-btn{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    background: #EA625C;
+    padding: 12px 90px;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+}
+
+.content__end-btn:hover{
+    background-color: #e4473f;
+}
+
+
+/* --------------------------------------------------- */
+
+
+.body__all-end{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-image: url('./images/runners\ 1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 830px;
+    margin-top: 70px;
+}
+
+.body__all-content{
+    width: 490px;
+    margin-right: 125px;
+} 
+
+.body__all-title{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.body__all-subtitle{
+    position: relative;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    left: 40px;
+    margin: 30px 0px;
+}
+
+.body__all-subtitle::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 3px;
+    height: 100px;
+    background-color: #fff;
+    left: -40px;
+}
+
+.body__all-btn{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 46px;
+    background: #EA625C;
+    color: #FFFFFF;
+    border: none;
+}
+
+.body__all-btn:hover{
+    background-color: #e94c44;
+}
